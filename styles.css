@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-[#ff3e57] rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#ff1f3d];
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    @apply bg-[#ff3e57] text-white px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#ff1f3d] hover:-translate-y-0.5;
+}
+
+.btn-outline {
+    @apply border-2 border-[#ff3e57] text-[#ff3e57] px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#ff3e57] hover:text-white hover:-translate-y-0.5;
+}
+
+/* Custom Card Styles */
+.card {
+    @apply bg-white rounded-2xl p-8 shadow-lg transition-all duration-300;
+}
+
+.card:hover {
+    @apply shadow-xl -translate-y-1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+} 
+/* Infinite horizontal scroll for partner logos */
+@keyframes caregap-logo-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* we scroll one full set width */
+}
+
+/* Base track styles */
+.logo-track {
+  /* speed is adjustable via --logo-speed (seconds for one full loop) */
+  --logo-speed: 40s;
+  animation: caregap-logo-scroll var(--logo-speed) linear infinite;
+}
+
+/* Pause on hover/focus for accessibility */
+.group:hover .logo-track,
+.group:focus-within .logo-track {
+  animation-play-state: paused;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .logo-track { animation: none; }
+}
