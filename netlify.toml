@@ -2,9 +2,16 @@
   publish = "."
   command = "npm install && npm run build"
 
+# Specific routes must come before the catch-all below.
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/quest"
+  to = "/quest.html"
+  status = 200
+
+[[redirects]]
+  from = "/quest-thanks"
+  to = "/quest-thanks.html"
   status = 200
 
 [[redirects]]
@@ -17,5 +24,10 @@
   to = "/privacy-policy.html"
   status = 200
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [build.environment]
-  NODE_VERSION = "18" 
+  NODE_VERSION = "18"
