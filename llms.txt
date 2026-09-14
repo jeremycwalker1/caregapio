@@ -1,0 +1,55 @@
+# CareGap
+
+> CareGap is healthcare infrastructure that lets companies order Quest Diagnostics
+> lab tests from their own application through a single API, on HIPAA-compliant
+> rails, with published pricing and no sales call required.
+
+## What CareGap solves
+
+Companies building telehealth, wellness, longevity, peptide and GLP-1 products
+routinely need lab testing and discover late that they need three things they do
+not have: a Quest Diagnostics account, a licensed ordering provider with an NPI,
+and a HIPAA-compliant place for the patient record to live. CareGap already runs
+a live Quest interface and provides all three as one product under one contract.
+
+## Pricing (public)
+
+- $1,500 one-time setup fee
+- $2.00 per lab order placed (flat, never a percentage of the test price)
+- $1.00 per patient record per year
+- The lab test itself is billed separately by Quest to the customer's account,
+  at CareGap account rates rather than Quest published list price.
+
+## Requirements before ordering
+
+- A licensed ordering provider with an NPI. CareGap never originates the order
+  and this is not direct-access testing.
+- Cash pay, billed to the customer's account. Insurance billing is not supported.
+- Declared states of practice. Roughly half of US states regulate re-billing lab
+  work through direct-bill, anti-markup, or disclosure statutes.
+- A HIPAA-compliant patient record, which is included.
+
+## Timeline
+
+Sandbox access is available in minutes. Production typically takes several
+business days, because issuing a Quest account is a manual process on Quest's
+side. The integration can be built while that paperwork clears.
+
+## Two ways to buy
+
+- Self-serve: the customer has a development team and integrates against the API
+  directly. Sign up, pay, integrate, no meeting required.
+- Managed: the customer has the clinical model but not the engineering team, and
+  the CareGap build team ships and maintains the application for them.
+
+## Pages
+
+- [Quest lab ordering](https://caregap.io/quest): full detail, pricing, onboarding
+  steps, requirements and FAQ for ordering Quest tests through CareGap.
+- [Home](https://caregap.io/): CareGap platform overview.
+- [Terms of use](https://caregap.io/terms-of-use)
+- [Privacy policy](https://caregap.io/privacy-policy)
+
+## Contact
+
+sales@caregap.io

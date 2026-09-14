@@ -5,7 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareGap | Order Quest Labs From Your App</title>
     <meta name="description" content="Connect your product to Quest Diagnostics through CareGap. NPI verification, HIPAA-compliant patient records, ordering and results. Published pricing, no sales call required.">
+    <link rel="canonical" href="https://caregap.io/quest">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caregap.io/quest">
+    <meta property="og:title" content="Order Quest Labs From Your App | CareGap">
+    <meta property="og:description" content="Connect your product to Quest Diagnostics through CareGap. $1,500 setup, $2.00 per order. Sandbox in minutes, production in days. No sales call required.">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="https://imgur.com/QAdKjar.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://caregap.io/quest#service",
+          "name": "Quest Diagnostics Lab Ordering API",
+          "serviceType": "Laboratory ordering integration",
+          "url": "https://caregap.io/quest",
+          "description": "Order Quest Diagnostics lab tests and receive structured results through a single API, on HIPAA-compliant rails. For telehealth, wellness, longevity, peptide and GLP-1 products that need lab testing.",
+          "provider": {
+            "@type": "Organization",
+            "name": "CareGap",
+            "url": "https://caregap.io",
+            "email": "sales@caregap.io"
+          },
+          "areaServed": {"@type": "Country", "name": "United States"},
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "One-time setup",
+              "price": "1500.00",
+              "priceCurrency": "USD",
+              "description": "NPI and license verification, Quest account setup, tenant provisioning, API keys and sandbox access."
+            },
+            {
+              "@type": "Offer",
+              "name": "Per order placed",
+              "price": "2.00",
+              "priceCurrency": "USD",
+              "description": "Flat platform fee charged per lab order submitted. Never a percentage of the test price."
+            },
+            {
+              "@type": "Offer",
+              "name": "Per patient record, per year",
+              "price": "1.00",
+              "priceCurrency": "USD",
+              "description": "HIPAA-compliant patient record, billed annually per patient."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://caregap.io/quest#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I need an NPI to order Quest lab tests?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes. A valid lab order requires a licensed ordering provider, whether the patient pays cash or not. If you have your own clinician or a telehealth partner you are covered. CareGap never originates the order and this is not direct-access testing."}
+            },
+            {
+              "@type": "Question",
+              "name": "How much does it cost to connect to Quest through CareGap?",
+              "acceptedAnswer": {"@type": "Answer", "text": "A $1,500 one-time setup fee, $2.00 per order placed, and $1.00 per patient record per year. The lab test itself is billed separately by Quest to your account at CareGap account rates rather than Quest list price."}
+            },
+            {
+              "@type": "Question",
+              "name": "Can I bill insurance for lab tests ordered through CareGap?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Not today. This is cash pay with the test billed to your account. Insurance billing brings payer enrollment, claims, denials and appeals into scope and is out of scope for this offering."}
+            },
+            {
+              "@type": "Question",
+              "name": "How fast can I start ordering Quest tests?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Sandbox access is available in minutes and does not wait on Quest paperwork. Production typically takes several business days because issuing a Quest account is a manual process on the Quest side. You can build the entire integration while the paperwork clears."}
+            },
+            {
+              "@type": "Question",
+              "name": "Why is the platform fee flat instead of a percentage of the test price?",
+              "acceptedAnswer": {"@type": "Answer", "text": "EKRA reaches commercial and cash-pay testing, and payments that move with the volume or value of tests are the pattern enforcers look at. A flat fee charged to the customer and priced to the technology keeps the arrangement defensible."}
+            },
+            {
+              "@type": "Question",
+              "name": "Do you support at-home lab collection?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes, as an add-on through a mobile phlebotomy partner, in addition to Quest patient service centers."}
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="dist/styles.css">

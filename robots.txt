@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /quest-thanks
+Disallow: /quest-thanks.html
+
+Sitemap: https://caregap.io/sitemap.xml
