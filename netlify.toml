@@ -10,6 +10,11 @@
   status = 200
 
 [[redirects]]
+  from = "/lab-ordering"
+  to = "/lab-ordering.html"
+  status = 200
+
+[[redirects]]
   from = "/quest-thanks"
   to = "/quest-thanks.html"
   status = 200

@@ -42,10 +42,23 @@ side. The integration can be built while that paperwork clears.
 - Managed: the customer has the clinical model but not the engineering team, and
   the CareGap build team ships and maintains the application for them.
 
+## Two ways to order Quest tests
+
+- On CareGap's Quest account (https://caregap.io/lab-ordering): no Quest account
+  of your own and no setup fee. Testing is charged at CareGap's Testing Price
+  List plus a per-order platform fee of $5.00 for orders 1-100 in a month, $3.00
+  for 101-500 and $2.00 above 500, both at submission. Sandbox in minutes with
+  no card; production once the entity is verified, a payment method is on file
+  and one ordering provider is enrolled. API docs: https://app.caregap.io/docs,
+  for agents https://app.caregap.io/llms.txt.
+- On your own Quest account (https://caregap.io/quest): the pricing above.
+
 ## Pages
 
 - [Quest lab ordering](https://caregap.io/quest): full detail, pricing, onboarding
   steps, requirements and FAQ for ordering Quest tests through CareGap.
+- [Quest lab ordering on CareGap's account](https://caregap.io/lab-ordering):
+  no Quest account of your own, no setup fee, sandbox with no card.
 - [Home](https://caregap.io/): CareGap platform overview.
 - [Terms of use](https://caregap.io/terms-of-use)
 - [Privacy policy](https://caregap.io/privacy-policy)
