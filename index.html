@@ -41,7 +41,7 @@
                     <img src="https://imgur.com/jWqRq4Y.png" alt="CareGap Logo" class="h-8">
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="/quest" class="text-gray-700 hover:text-[#ff3e57] transition-colors font-semibold">Quest Lab Ordering</a>
+                    <a href="/lab-ordering" class="text-gray-700 hover:text-[#ff3e57] transition-colors font-semibold">Lab Ordering</a>
                     <a href="#how-it-works" class="text-gray-700 hover:text-[#ff3e57] transition-colors">How It Works</a>
                     <a href="#features-section" class="text-gray-700 hover:text-[#ff3e57] transition-colors">Features</a>
                     <a href="#partners-section" class="text-gray-700 hover:text-[#ff3e57] transition-colors">Our Partners</a>
@@ -57,7 +57,7 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="/quest" class="text-gray-700 hover:text-[#ff3e57] transition-colors font-semibold">Quest Lab Ordering</a>
+                    <a href="/lab-ordering" class="text-gray-700 hover:text-[#ff3e57] transition-colors font-semibold">Lab Ordering</a>
                     <a href="#how-it-works" class="text-gray-700 hover:text-[#ff3e57] transition-colors">How It Works</a>
                     <a href="#features-section" class="text-gray-700 hover:text-[#ff3e57] transition-colors">Features</a>
                     <a href="#partners-section" class="text-gray-700 hover:text-[#ff3e57] transition-colors">Our Partners</a>
@@ -113,29 +113,30 @@
 </section>
 
 
-    <!-- Quest Lab Ordering -->
+    <!-- Lab Ordering -->
     <section id="quest-section" class="py-20 bg-gray-900 text-white">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
-                    <p class="text-sm font-semibold tracking-widest text-[#ff3e57] mb-4">NEW &middot; FOR DEVELOPERS AND PRODUCT TEAMS</p>
-                    <h2 class="text-4xl font-bold mb-6">Connect to Quest Diagnostics without building the integration</h2>
+                    <p class="text-sm font-semibold tracking-widest text-[#ff3e57] mb-4">NEW &middot; QUEST LAB ORDERING, NO QUEST ACCOUNT NEEDED</p>
+                    <h2 class="text-4xl font-bold mb-6">Order Quest labs on our account, starting in sandbox today</h2>
                     <p class="text-lg text-gray-400 mb-6">
-                        If you are building a telehealth, peptide, GLP-1, longevity, or wellness product and you need lab testing, you need a Quest account, an ordering provider, and somewhere HIPAA-compliant for the patient record to live. CareGap already runs a live Quest interface. You order tests and pull structured results through one API.
+                        If you are building a telehealth, peptide, GLP-1, longevity, or wellness product and you need lab testing, skip the Quest paperwork. Your orders run on CareGap's Quest account, so you sign up with a practice name and a mobile number, get API keys, and start placing sandbox orders &mdash; no card, no setup fee.
                     </p>
                     <ul class="space-y-3 mb-8 text-gray-300">
                         <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> Order Quest lab tests directly from your own app</li>
-                        <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> Structured results back over API, with a synced test compendium</li>
+                        <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> No Quest account to open and no Quest application</li>
+                        <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> Testing at CareGap's Testing Price List, charged when each order is submitted</li>
                         <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> HIPAA-compliant patient records, BAA included</li>
-                        <li class="flex gap-3"><span class="text-[#ff3e57] font-bold">&#10003;</span> Published pricing, sandbox access, no sales call required</li>
                     </ul>
                     <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="bg-white/10 rounded-full px-5 py-2 font-semibold">$1,500 one-time setup</span>
-                        <span class="bg-white/10 rounded-full px-5 py-2 font-semibold">$2.00 per order</span>
+                        <span class="bg-white/10 rounded-full px-5 py-2 font-semibold">No setup fee</span>
+                        <span class="bg-white/10 rounded-full px-5 py-2 font-semibold">Sandbox with no card</span>
+                        <span class="bg-white/10 rounded-full px-5 py-2 font-semibold">No Quest account to open</span>
                     </div>
                     <div class="flex flex-wrap gap-4">
-                        <a href="/quest" class="inline-block bg-[#ff3e57] text-white px-8 py-3 rounded-full hover:bg-[#ff3e57]/90 transition-colors">See Quest Lab Ordering</a>
-                        <a href="/lab-ordering" class="inline-block border-2 border-white/30 text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition-colors">Order On Our Quest Account</a>
+                        <a href="/lab-ordering" class="inline-block bg-[#ff3e57] text-white px-8 py-3 rounded-full hover:bg-[#ff3e57]/90 transition-colors">See Lab Ordering</a>
+                        <a href="https://app.caregap.io/get-started" class="inline-block border-2 border-white/30 text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition-colors">Start In Sandbox</a>
                     </div>
                 </div>
                 <div data-aos="fade-left">
@@ -144,22 +145,18 @@
                         <div class="space-y-6 text-sm">
                             <div>
                                 <p class="font-semibold mb-1">You have a dev team</p>
-                                <p class="text-gray-400">Sign up, put a card on file, and integrate against the API. Sandbox in minutes, production in days.</p>
+                                <p class="text-gray-400">Sign up and build against the real API in sandbox while you verify. Go live once your entity is verified, a payment method is on file and an ordering provider is enrolled.</p>
                             </div>
                             <div>
                                 <p class="font-semibold mb-1">You need the app built</p>
                                 <p class="text-gray-400">You bring the clinical model, the CareGap build team ships and maintains the product for you.</p>
                             </div>
                             <div>
-                                <p class="font-semibold mb-1">You don't want your own Quest account</p>
-                                <p class="text-gray-400">Order on CareGap's Quest account instead: no setup fee, sandbox with no card. <a href="/lab-ordering" class="text-[#ff3e57] font-semibold hover:underline">See how it works</a></p>
-                            </div>
-                            <div>
-                                <p class="font-semibold mb-1">You already have a Quest account</p>
-                                <p class="text-gray-400">Bring your own account and ordering provider, and use CareGap purely as the technology layer.</p>
+                                <p class="font-semibold mb-1">You want Quest to bill you directly</p>
+                                <p class="text-gray-400">We set up a Quest account in your name and connect it to the same API. <a href="/quest" class="text-[#ff3e57] font-semibold hover:underline">See your-own-account setup</a></p>
                             </div>
                         </div>
-                        <a href="/quest" class="inline-block mt-8 text-[#ff3e57] font-semibold hover:underline">Read the full details and pricing &rarr;</a>
+                        <a href="/lab-ordering" class="inline-block mt-8 text-[#ff3e57] font-semibold hover:underline">Read the full details and pricing &rarr;</a>
                     </div>
                 </div>
             </div>
